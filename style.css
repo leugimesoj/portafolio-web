@@ -1,0 +1,14 @@
+body {
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 20%, rgba(4,180,224,1) 100%);
+  }
+.icon-link:hover i {
+    transform: rotate(20deg); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+    color: #04b4e0 !important;
+  }
+
+
+  .icon-link-text:hover {
+    color: #04b4e0 !important; /* Cambia el color del texto a azul */
+  }
