@@ -1,6 +1,11 @@
 body {
-    background: rgb(9,9,121);
-    background: linear-gradient(90deg, rgba(9,9,121,1) 20%, rgba(4,180,224,1) 100%);
+    background:  linear-gradient(to left, 
+    #04b4e0 0%, 
+    #0399c7 30%, 
+    #027fae 60%, 
+    #016895 80%, 
+    #01527d 100%);
+    font-family: 'Poppins'
   }
 .icon-link:hover i {
     transform: rotate(20deg); 
@@ -9,6 +14,41 @@ body {
   }
 
 
-  .icon-link-text:hover {
-    color: #04b4e0 !important; /* Cambia el color del texto a azul */
-  }
+.icon-link-text:hover {
+    color: #04b4e0 !important; 
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-100%); /* Comienza fuera de la vista, desde la izquierda */
+    transition: transform 0.4s ease-in-out, opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+    position: relative;
+    transform: translateX(0); /* Llega a su posición normal */
+    opacity: 1;
+}
+
+.carousel-item-prev,
+.carousel-item-next {
+    transform: translateX(-100%); /* Todos los que salen se van hacia la izquierda */
+    opacity: 0;
+}
+.btn:hover{
+    color: #04b4e0 !important; 
+}
+
+.title-position{
+    color: #04b4e0 !important;
+}
+.card-contact{
+    background-color:#fcfcfc ;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
